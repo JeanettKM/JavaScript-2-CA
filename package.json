@@ -10,10 +10,10 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "one-liner-joke": "^1.2.2"
-  },
   "devDependencies": {
     "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "give-me-a-joke": "^0.5.0"
   }
 }
