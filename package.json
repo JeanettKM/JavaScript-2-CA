@@ -5,12 +5,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "node src/js/joker.js",
-    "format": "prettier -w src/js/joker.js"
-  },
+    "test": "node src/js/joker.test.js",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "format": "prettier -w src/**/*.js"
+  },  
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.53.0",
     "prettier": "^3.0.3"
   },
   "dependencies": {
