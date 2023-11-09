@@ -1,6 +1,6 @@
 {
   "name": "myfirstpackage-joker-jkm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "main": "index.js",
@@ -9,7 +9,7 @@
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
     "format": "prettier -w src/**/*.js"
-  },  
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
