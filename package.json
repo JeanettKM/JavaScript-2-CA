@@ -6,14 +6,29 @@
   "main": "index.js",
   "scripts": {
     "test": "node src/js/joker.js",
-    "format": "prettier -w src/js/joker.js"
+    "format": "prettier -w src/js/joker.js",
+    "prepare": "husky install"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3"
   },
   "dependencies": {
     "give-me-a-joke": "^0.4.0"
-  }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
+  }  
 }
